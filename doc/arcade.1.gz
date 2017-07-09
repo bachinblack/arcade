@@ -1,0 +1,115 @@
+.TH ARCADE 1  2017-05-08 "EPI" "Epitech 2020"
+.SH NAME
+arcade
+.SH USAGE
+.B ./arcade
+
+the 'arcade' executable is a videogames interface.
+
+Upon running it, it automatically look for games in the
+.IR ./games/
+directory.
+
+It also look for graphics libraries layouts in the
+.IR ./lib/
+directory.
+
+if at least one game and one library is found,
+an interface appears in a new window, and a selection screen
+where the uer can select a game and a graphic library shows up.
+
+To select a game in a selection screen, press S and D
+To select a library, press Z and E
+Press Enter to play the selected game with the selected library
+
+While playing, the user can, by pressing the 3 and 4 buttons switch graphic library
+He also can switch games, by using the 5 and 6 buttons.
+
+.SS A game is composed of 4 files:
+.br
+ 
+-> lib_arcade_XXX.so
+.PP
+ the dynamic library where the game is stored.
+
+
+-> lib_arcade_XXX.bmp
+.PP
+ the image corresponding to the game in the selection screen.
+ The picture will be Black if there is none.
+.PP
+-> lib_arcade_XXX.score
+.PP
+ the best score made at this game.
+ If the file doesn't exist, it will be created.
+
+-> lib_arcade_XXX.map
+.PP
+ Not useful for every games,
+ maps for a game are kept in this file.
+ Without this file, a basic map is loaded
+
+graphical libraries are only defined by the .so file 'lib_arcade_XXX.so'
+but they need the original libraries dependencies installed on the computer to work
+
+Here is a list of the games and libraries currently handeled by the arcade project:
+
+.SS GAMES based on AGame:
+
+
+	Snake
+	Qix
+	Pacman
+	Zelda
+	SolarFox
+
+(See below for a quick explaining of each game)
+
+.SS LIBRARIES based on AGraphix:
+
+
+	SDL
+	OPENGL
+	AALIB
+
+.SH RULES
+.BI Snake
+
+The player begin in the middle of the game area with a snake of 4 blocks lenght. The goal is to eat as much apples(
+.I red blocks
+) as it can. Every time he eats, he grow up by one block. Touching an obstacle (grey block) a wall or the snake's body cause the game to end.
+
+.BI Qix
+
+In this game, the player need to dodges the three enemies and capture at least
+.I 75%
+of the game area by enclosing parts with the grey wall he let with his tail. If the player is hit by an enemy or if the enemy in the middle touches his wall while it's still grey, the game is over.
+
+.BI Pacman
+
+Do not tell me you don't know pacman. Anyway, nothing to say, eat the
+.I pills
+and dodge ghosts. Eating a
+.I super pill
+cause the ghosts to flee and become eatable.
+
+.BI Zelda
+
+In this horror game, you need to dodge the statues that are coming your way and try to reach the
+.I gates.
+If the hero is hit four times by a statue, the game is over.
+
+.BI SolarFox
+
+The game area is covered with
+.I purple blocks.
+The goal is to pick them all while dodging the ennemies shots at the top and at the bottom of the game area.
+
+.SH HISTORY
+The arcade project was made by
+.B Arthur JOSSO
+,
+.B Philippe BOUTTEREUX
+, and
+.B Mathis ROUSSELOT
+and still no dangerous bugs were encountered
