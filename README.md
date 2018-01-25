@@ -17,6 +17,6 @@ libsdl2-dev
 libaa1-dev
 opengl (can't remember packages names)
 
-I may have forgotten some. If it's the case, i am sorry, and i would be happy to make the changes.
+I may have forgotten some. If it's the case, i am sorry, and i would be happy to complete the list.
 
 Some screenshots are available to describe the project and its content. Feel free to take a look
