@@ -17,8 +17,6 @@ libsdl2-dev
 libaa1-dev
 opengl (can't remember packages names)
 
-I don't remember the every packages, if someone gets a list, i would be nice to send it to me by mail
-(philippe.bouttereux@epitech.eu)
+I may have forgotten some. If it's the case, i am sorry, and i would be happy to make the changes.
 
-If you are too lazy to download this project, i took some screenshots of the program's dispaly
-and one of our work to create the structure of the project
+Some screenshots are available to describe the project and its content. Feel free to take a look
